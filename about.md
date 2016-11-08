@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About ProfessorPotatis
+title: Om ProfessorPotatis
 permalink: /about/
 ---
 

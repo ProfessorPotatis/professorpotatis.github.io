@@ -16,9 +16,9 @@
 title: ProfessorPotatis
 email: sk222uf@student.lnu.se
 description: > # this means to ignore newlines until "baseurl:"
-  This is ProfessorPotatis new site made in a LNU course, 1dv022.
-  You can contact me by using my e-mail, github or instagram, also
-  found here in the footer.
+  Det här är ProfessorPotatis nya website gjord i LNU kursen 1dv022.
+  Du kan kontakta mig antingen genom att skicka ett mail, ett meddelande på github
+  eller på min Instagram som du hittar här till vänster.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 port: 4000
