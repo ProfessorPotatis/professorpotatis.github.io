@@ -1,0 +1,7 @@
+/* Allows Google-robot, but disallows all other robots. */
+
+User-agent: Google
+Disallow:
+
+User-agent: *
+Disallow: /
