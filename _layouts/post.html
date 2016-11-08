@@ -16,14 +16,7 @@ layout: default
   <div id="disqus_thread"></div>
     <script>
         let disqus_config = function () {
-            let pageUrl = '';
-            let links = document.getElementsByTagName('link');
-            for (let i = 0; i < links.length; i += 1) {
-                    if (links[i].getAttribute('rel') === 'canonical') {
-                        pageUrl = links[i].getAttribute('href');
-                    }
-                }
-            this.page.url = pageUrl;
+            this.page.url = page.url;
             this.page.identifier = '';
             this.page.title = page.title;
         };
