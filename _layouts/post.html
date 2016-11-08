@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+  {% if page.comments %}
+  <div id="disqus_thread"></div>
+    <script>
+        let disqus_config = function () {
+            let pageUrl = '';
+            let links = document.getElementsByTagName('link');
+            for (let i = 0; i < links.length; i += 1) {
+                    if (links[i].getAttribute('rel') === 'canonical') {
+                        pageUrl = links[i].getAttribute('href');
+                    }
+                }
+            this.page.url = pageUrl;
+            this.page.identifier = '';
+            this.page.title = page.title;
+        };
+
+        (function() {
+            let d = document, s = d.createElement('script');
+
+            s.src = '//httpsprofessorpotatisgithubio.disqus.com/embed.js';
+
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    {% endif %}
+
+</div>
