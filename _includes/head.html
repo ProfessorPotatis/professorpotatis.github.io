@@ -4,6 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ page.url }}" />
+    <meta property="og:image" content="https://commons.wikimedia.org/wiki/File:Potato_with_sprouts.jpg#/media/File:Potato_with_sprouts.jpg" />
     <meta name="description" content="{{ site.description }}">
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
