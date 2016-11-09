@@ -35,6 +35,14 @@ $on-laptop:        800px;
     background: linear-gradient($gradient1, $gradient2); /* Standard syntax */
 }
 
+@mixin background3($gradient1, $gradient2, $gradient3) {
+    background: $gradient1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($gradient1, $gradient2, $gradient3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($gradient1, $gradient2, $gradient3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($gradient1, $gradient2, $gradient3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($gradient1, $gradient2, $gradient3); /* Standard syntax */
+}
+
 
 // Using media queries with like this:
 // @include media-query($palm) {
