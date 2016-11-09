@@ -115,6 +115,8 @@
  * Site footer
  */
 .site-footer {
+    position: absolute;
+    height: 60px;
     bottom: 0;
     padding: $spacing-unit 0;
     @include background($background-color, #9db2a1);
