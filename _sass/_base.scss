@@ -2,8 +2,7 @@
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+p, pre, dl, dd, ol, ul {
     margin: 0;
     padding: 0;
 }
@@ -11,18 +10,6 @@ dl, dd, ol, ul, figure {
 html, body {
     height: 100%;
 }
-
-.page-content {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    margin: 0px 0px -60px 0px;
-}
-
-.page-content .wrapper .post {
-    padding-bottom: 0px 0px 60px 0px;
-}
-
 
 /**
  * Basic styling
@@ -35,6 +22,7 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    //height: 100%;
 }
 
 

@@ -115,10 +115,13 @@
  * Site footer
  */
 .site-footer {
-    height: 60px;
     padding: $spacing-unit 0;
     @include background($background-color, #9db2a1);
 
+}
+
+.site-footer .wrapper {
+    height: 85px;
 }
 
 .footer-heading {
@@ -191,6 +194,14 @@
  */
 .page-content {
     padding: $spacing-unit 0;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0px 0px -85px 0px;
+}
+
+.page-content .wrapper {
+    padding: 0px 0px 85px 0px;
 }
 
 .page-heading {
