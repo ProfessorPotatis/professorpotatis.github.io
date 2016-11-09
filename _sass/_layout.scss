@@ -115,10 +115,7 @@
  * Site footer
  */
 .site-footer {
-    position: relative;
-    margin-top: -100px;
     height: 100px;
-    clear: both;
     padding: $spacing-unit 0;
     @include background($background-color, #9db2a1);
 
