@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 3;
 }
 
 
@@ -64,7 +64,8 @@ figcaption {
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
+    margin: 0 $spacing-unit;
+    list-style: none;
 }
 
 li {
@@ -97,7 +98,7 @@ a {
     }
 
     &:hover {
-        color: $text-color;
+        color: darken($brand-color, 15%);
         text-decoration: underline;
     }
 }
@@ -108,8 +109,8 @@ a {
  * Blockquotes
  */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $brown-color;
+    border-left: 4px solid $brown-color-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -127,14 +128,14 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+    font-size: 14px;
+    border: 2px solid $border-color;
+    border-radius: 10px;
+    background-color: $brown-color-light;
 }
 
 code {
-    padding: 1px 5px;
+    padding: 1px 7px;
 }
 
 pre {
@@ -154,8 +155,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-    max-width:         calc(800px - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(850px - (#{$spacing-unit} * 2));
+    max-width:         calc(850px - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -193,12 +194,12 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: darken($brand-color, 15%);
         }
     }
 }

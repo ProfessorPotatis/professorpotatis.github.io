@@ -13,17 +13,26 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #00423a;
-$background-color: #ccf8f3;
-$brand-color:      #008575;
+$text-color:       #797a72;
+$background-color: #f2f4e5;
+$brand-color:      #a3195e;
 
-$grey-color:       #2c5b74;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$brown-color:      #797a72;
+$brown-color-light:lighten($brown-color, 40%);
+$brown-color-dark: darken($brown-color, 25%);
+$border-color:     #514a1e;
 
 $on-palm:          600px;
 $on-laptop:        800px;
 
+
+@mixin background($gradient1, $gradient2) {
+    background: $gradient1; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($gradient1, $gradient2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($gradient1, $gradient2); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($gradient1, $gradient2); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($gradient1, $gradient2); /* Standard syntax */
+}
 
 
 // Using media queries with like this:

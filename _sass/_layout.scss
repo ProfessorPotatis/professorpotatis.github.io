@@ -2,24 +2,24 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    @include background($brown-color-light, $background-color);
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 26px;
+    font-family: Rockwell, serif;
+    font-size: 30px;
     line-height: 56px;
-    letter-spacing: -1px;
+    letter-spacing: 1px;
     margin-bottom: 0;
     float: left;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $brown-color-dark;
     }
 }
 
@@ -32,7 +32,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: $brown-color-dark;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one
@@ -46,8 +46,8 @@
         top: 9px;
         right: 30px;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
+        border: 1px solid $brown-color-light;
+        border-radius: 10px;
         text-align: right;
 
         .menu-icon {
@@ -64,7 +64,7 @@
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: $brown-color-dark;
                 }
             }
         }
@@ -92,13 +92,16 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    //border-top: 2px dashed $border-color;
     padding: $spacing-unit 0;
+    @include background($background-color, #9db2a1);
+
 }
 
 .footer-heading {
     font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+    margin-bottom: $spacing-unit / 3;
+    border-bottom: 2px dotted $text-color;
 }
 
 .contact-list,
@@ -108,8 +111,8 @@
 }
 
 .footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
+    font-size: 12px;
+    color: $brown-color-dark;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -121,8 +124,8 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
@@ -131,8 +134,8 @@
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(60% - (#{$spacing-unit} / 2));
+    width:         calc(60% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
@@ -180,7 +183,7 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: $brown-color;
 }
 
 .post-link {
@@ -194,21 +197,22 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
+    margin-bottom: 0;
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
+    font-size: 30px;
+    border-bottom: 2px dotted $brown-color-dark;
+    letter-spacing: 1px;
+    line-height: 2;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        font-size: 26px;
     }
 }
 
 .post-content {
-    margin-bottom: $spacing-unit;
+    margin-bottom: 0;
 
     h2 {
         font-size: 32px;
