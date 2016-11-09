@@ -8,6 +8,18 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+}
+
+.post {
+    overflow: auto;
+    padding-bottom: 100px;
+}
 
 
 /**
