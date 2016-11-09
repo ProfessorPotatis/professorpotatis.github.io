@@ -4,6 +4,8 @@ title: Om ProfessorPotatis
 permalink: /about/
 ---
 
+![En bild på en glad ProfessorPotatis]({{ site.url }}/assets/me.JPG)
+
 Bakom alias `ProfessorPotatis` döljer jag mig. Sofia, 25 år, student vid
 Linnéuniversitetets distansprogram för webbprogrammerare. Jag har tidigare läst
 distanskurser inom webbprogrammering vid Blekinge Tekniska Högskola, där jag lärt

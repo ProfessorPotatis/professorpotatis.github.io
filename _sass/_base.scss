@@ -20,7 +20,7 @@ body {
     font-weight: 300;
     color: $text-color;
     background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 50%;
 }
 
 
@@ -41,8 +41,10 @@ ul, ol, dl, figure,
  * Images
  */
 img {
-    max-width: 100%;
-    vertical-align: middle;
+    max-width: 20%;
+    float: right;
+    padding: 5px;
+    //vertical-align: middle;
 }
 
 

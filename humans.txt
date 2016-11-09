@@ -8,7 +8,12 @@ Location: Gothenburg, Sweden
 /* SITE */
 
 Site Name: https://professorpotatis.github.io
-Last update: 2016/11/08
-Language: Swedish/English
+Last update: 2016/11/09
+Language: Swedish
 Standards: HTML5, Sass, CSS3, JavaScript
 IDE: Atom, Firefox, Firebug
+
+/* THANKS */
+
+John Häggerud, LNU: https://github.com/1dv022/jekyll-boilerplate
+Johan Leitet, LNU: https://github.com/1dv022/1dv022.github.io

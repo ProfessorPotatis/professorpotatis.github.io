@@ -1,9 +1,13 @@
 ---
 layout: post
 comments: true
-title:  "Testar att blogga"
+title:  "Testar att blogga med bild"
 date:   2016-11-04 12:02:31 +0000
 categories: jekyll update
 ---
 Jag testar att skapa en ny bloggpost genom att använda mig av "Welcome to Jekyll!"
 posten som mall. Tydligen måste man spara ner sina nya filer enligt `YYYY-MM-DD-name-of-post.markdown` i mappen `_posts` för att de ska dyka upp på förstasidan.
+
+Så här glad blir ProfessorPotatis när allt fungerar:
+
+![Yay]({{ site.url }}/assets/me.JPG)
