@@ -20,7 +20,7 @@ body {
     font-weight: 300;
     color: $text-color;
     background-color: $background-color;
-    -webkit-text-size-adjust: 50%;
+    -webkit-text-size-adjust: 100%;
 }
 
 
@@ -44,20 +44,6 @@ img {
     max-width: 20%;
     float: right;
     padding: 5px;
-    //vertical-align: middle;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
 }
 
 
@@ -101,25 +87,7 @@ a {
 
     &:hover {
         color: darken($brand-color, 15%);
-        text-decoration: underline;
-    }
-}
-
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $brown-color;
-    border-left: 4px solid $brown-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
+        text-shadow: 1px 1px $brand-color;
     }
 }
 
@@ -198,7 +166,7 @@ pre {
         display: inline-block;
         width: 18px;
         height: 18px;
-        vertical-align: middle;
+        vertical-align: text-bottom;
 
         path {
             fill: darken($brand-color, 15%);
